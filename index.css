@@ -1,0 +1,422 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    min-height: 100vh;
+    line-height: 1.7;
+    scroll-behavior: smooth;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 15px 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 16px;
+    color: #2c3e50;
+}
+
+.dot {
+    color: #00aaff;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #555;
+    font-weight: 500;
+    padding: 10px 15px;
+    border-radius: 6px;
+    transition: color 0.3s ease-in-out;
+    font-size: 0.9rem;
+}
+
+.nav-links li a:hover {
+    color: #00aaff;
+}
+
+.button {
+    background: #00aaff;
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+    font-weight: 500;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 0.9rem;
+}
+
+.button:hover {
+    background: #007acc;
+    transform: translateY(-1px);
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+    background-color: #fff;
+    width: 90%;
+    max-width: 1100px;
+    margin: 30px auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.hero-content {
+    flex: 1;
+    padding-right: 40px;
+    text-align: left;
+}
+
+.hero-content h1 {
+    font-size: 2.8em;
+    color: #2c3e50;
+    margin-bottom: 10px;
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+
+.hero-content h2 {
+    font-size: 1.6em;
+    color: #555;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.accent-text {
+    color: #00aaff;
+    font-weight: 600;
+}
+
+.hero-content .tagline {
+    font-size: 1rem;
+    color: #777;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.primary-button {
+    background-color: #00aaff;
+    color: white;
+    padding: 12px 22px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.primary-button:hover {
+    background-color: #007acc;
+    transform: translateY(-1px);
+}
+
+.secondary-button {
+    background-color: transparent;
+    color: #00aaff;
+    border: 2px solid #00aaff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.secondary-button:hover {
+    background-color: #e0f7fa;
+    color: #0056b3;
+    transform: translateY(-1px);
+}
+
+.hero-image {
+    flex: 1;
+    text-align: center;
+}
+
+.profile-image {
+    width: 220px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+/* About Section */
+.about-section {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+}
+
+.about-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.section-title {
+    font-size: 2.4em;
+    color: #2c3e50;
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.about-content p {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.skills-experience {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.skills h3,
+.experience h3 {
+    font-size: 1.6em;
+    color: #2c3e50;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.skill-list {
+    list-style: none;
+    padding: 0;
+}
+
+.skill-list li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.95rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.skill-list li i {
+    color: #00aaff;
+    font-size: 1.1rem;
+    width: 20px;
+    text-align: center;
+}
+
+.experience p {
+    font-size: 0.95rem;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.experience .education {
+    font-style: italic;
+    color: #777;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 25px;
+    background-color: #2c3e50;
+    color: white;
+    margin-top: 40px;
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        gap: 15px;
+    }
+    .nav-links li a {
+        padding: 8px 12px;
+        font-size: 0.85rem;
+    }
+    .button {
+        padding: 10px 16px;
+        font-size: 0.85rem;
+    }
+    .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 40px 20px;
+    }
+    .hero-content {
+        padding-right: 0;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    .hero-content h1 {
+        font-size: 2.4em;
+    }
+    .hero-content h2 {
+        font-size: 1.4em;
+    }
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .hero-image {
+        margin-bottom: 20px;
+    }
+    .profile-image {
+        width: 180px;
+    }
+    .about-container {
+        padding: 20px;
+    }
+    .section-title {
+        font-size: 2em;
+        margin-bottom: 20px;
+    }
+    .skills-experience {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .skills h3,
+    .experience h3 {
+        font-size: 1.4em;
+        margin-bottom: 10px;
+    }
+    .skill-list li {
+        font-size: 0.9rem;
+        margin-bottom: 8px;
+    }
+    .experience p {
+        font-size: 0.9rem;
+        margin-bottom: 12px;
+    }
+    footer {
+        padding: 20px;
+        font-size: 0.85rem;
+    }
+}
+
+/* Responsive Navigation */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column; /* Stack logo and links */
+        align-items: flex-start; /* Align items to the left */
+        padding: 15px;
+    }
+
+    
+    .nav-links {
+        display: none; /* Hide links by default on small screens */
+        flex-direction: column; /* Stack links vertically */
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .nav-links.active {
+        display: flex; /* Show links when the 'active' class is added */
+    }
+
+    .nav-links li {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .nav-links li a {
+        display: inline-block; /* Make the entire link clickable */
+        padding: 12px 15px;
+        border-radius: 6px;
+        background-color: #f9f9f9;
+        color: #333;
+        transition: background-color 0.3s ease-in-out;
+    }
+
+    .nav-links li a:hover {
+        background-color: #e0e0e0;
+        color: #00aaff;
+    }
+
+    .button {
+        display: none; /* Hide the "Let's Talk" button initially */
+    }
+
+    .hamburger {
+        display: block; /* Show the hamburger menu */
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        cursor: pointer;
+        font-size: 24px;
+        color: #555;
+    }
+
+    .hamburger:hover {
+        color: #00aaff;
+    }
+}
+
+/* Larger screens */
+@media (min-width: 769px) {
+    nav {
+        flex-direction: row; /* Keep logo and links in a row */
+        align-items: center;
+    }
+
+    .nav-links {
+        display: flex !important; /* Show links */
+        flex-direction: row;
+        width: auto;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+
+    .nav-links li {
+        width: auto;
+        text-align: left;
+        margin-bottom: 0;
+    }
+
+    .logo{
+      line-height: 20px;
+    }
+
+    .button {
+        display: inline-block; /* Show the "Let's Talk" button */
+    }
+
+    .hamburger {
+        display: none; /* Hide the hamburger menu */
+    }
+}

@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif; /* Using the same font for consistency */
+}
+
+body {
+    background-color: #222; /* Darker, more intense background */
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 30px; /* Increased padding for better spacing on smaller screens */
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    width: 90%; /* Increased width */
+    max-width: 1000px; /* Adjusted max width */
+    border-radius: 12px; /* More rounded corners */
+    overflow: hidden; /* Clip image to the rounded corners */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* More prominent shadow */
+    background-color: #333; /* Dark container background */
+}
+
+.image-section {
+    flex: 1.5;
+    overflow: hidden; /* Ensure image doesn't overflow rounded corners */
+}
+
+.image-section img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out; /* Subtle hover effect */
+}
+
+.image-section:hover img {
+    transform: scale(1.05);
+}
+
+.text-section {
+    flex: 1;
+    padding: 40px; /* Increased padding */
+}
+
+.date {
+    font-size: 16px; /* Slightly larger date */
+    opacity: 0.8;
+    margin-bottom: 15px;
+    color: #ddd; /* Lighter date color */
+}
+
+h1 {
+    font-size: 48px; /* Larger title */
+    font-weight: bold;
+    line-height: 1.1;
+    margin-bottom: 15px;
+    color: #eee; /* Lighter title color */
+}
+
+h1 span {
+    font-style: italic;
+    color: #007bff; /* Professional blue accent color */
+}
+
+.quote {
+    font-size: 18px; /* Slightly larger quote */
+    margin: 25px 0;
+    font-style: italic;
+    opacity: 0.9;
+    color: #ccc; /* Lighter quote color */
+}
+
+.read-more {
+    background: #007bff; /* Blue button */
+    color: white;
+    padding: 12px 25px; /* Adjusted padding */
+    border: none; /* No border */
+    border-radius: 8px; /* More rounded button */
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+    font-size: 16px; /* Slightly larger text */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15); /* Subtle button shadow */
+}
+
+.read-more:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: translateY(-2px);
+}
+
+.back {
+    text-decoration: none;
+    color: #ddd; /* Lighter back link color */
+    margin-left: 25px;
+    border: 2px solid #ddd;
+    padding: 10px 15px; /* Adjusted padding */
+    border-radius: 8px;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    font-size: 16px; /* Slightly larger text */
+}
+
+.back:hover {
+    background-color: #ddd;
+    color: #222; /* Dark text on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Stack image and text vertically */
+        width: 95%;
+    }
+
+    .image-section {
+        flex: 1;
+        width: 100%;
+        border-radius: 12px 12px 0 0; /* Rounded top corners */
+    }
+
+    .text-section {
+        flex: 1;
+        padding: 30px;
+        text-align: center; /* Center text on smaller screens */
+    }
+
+    .text-section h1 {
+        font-size: 36px;
+        text-align: center;
+    }
+
+    .back {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+}
